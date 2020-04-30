@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Bootstrap Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+    <link href="./static/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://bootswatch.com/_assets/css/custom.min.css" rel="stylesheet" id="bootstrap-css2">
+    <link href="https://bootswatch.com/4/slate/bootstrap.css" rel="stylesheet" id="bootstrap-css3">
+    <link rel="stylesheet" href="./static/all.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./static/custom.css" /> <!-- reset css -->
+    <script src="./static/all.js"></script>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div id="wrapperBackground">
+
+        </div>
+        <div class="form-group changeBackground">
+            <div class="input-group mb-3">
+                <div class="custom-file">
+
+                    <input type="file" class="custom-file-input" id="changeBackground"
+                        oninput="changeBackground(); this.value = null;">
+                    <label class="custom-file-label" for="changeBackground">Add background</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mySidenavR" class="sidenavR">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavR()">×</a>
+        <div class="accordion" id="accordionExample">
+            <div id="wrapper">
+
+            </div>
+        </div>
+        <div class="form-group addPicture">
+            <div class="input-group mb-3">
+                <div class="custom-file">
+
+                    <input type="file" class="custom-file-input" id="addPicture"
+                        oninput="addPicture(); this.value = null;">
+                    <label class="custom-file-label" for="addPicture">Add picture</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="row ">
+                    <div class="col col-md-1">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+                    </div>
+                    <div class="col col-md-10 justify-content-md-center">
+                        <canvas id="canvas" width=1500 height=950 onload="resizeCanvas()"></canvas>
+
+                    </div>
+                    <div class="col col-md-1 justify-content-md-right">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNavR()">☰</span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./preload.js"></script>
+    <script src="./canvas.js"></script>
+    <script src="./picture.js"></script>
+    <script src="./events.js"></script>
+    <script src="./controller.js"></script>
+</body>
+
+</html>

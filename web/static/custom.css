@@ -1,0 +1,162 @@
+body{
+    background-color: #272B30;
+    padding-top:0px;
+}
+
+#canvas{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.backgroundsNav img{
+    width:16rem;
+}
+
+.changeBackground{
+    margin-left: 20px;
+    width: 18rem;
+}
+
+.card{
+
+    margin-left: 20px;
+}
+.sidenav{
+    background-color:#111;
+    height:100%;
+    left:0;
+    overflow-x:hidden;
+    padding-top:60px;
+    position:fixed;
+    top:0;
+    transition:.5s;
+    width:0;
+    z-index:1;
+}
+.sidenavR{
+    background-color:#111;
+    height:100%;
+    overflow-x:hidden;
+    padding-top:60px;
+    position:fixed;
+    right:0;
+    top:0;
+    transition:.5s;
+    width:0;
+    z-index:1;
+}
+.sidenav a,
+.sidenavR a{
+    color:#818181;
+    display:block;
+    font-size:25px;
+    padding:8px 8px 8px 8px;
+    margin-left: 10px;
+    margin-right: 50px;
+    text-decoration:none;
+    transition:.3s;
+    overflow-x:hidden;
+}
+.sidenav a:hover,
+.offcanvas a:focus,
+.sidenavR a:hover,
+.offcanvas a:focus{
+    color:#f1f1f1;
+    border: transparent;
+}
+.sidenav .closebtn,
+.sidenavR .closebtn{
+    font-size:36px;
+    margin-left:50px;
+    position:absolute;
+    right:25px;
+    top:0;
+
+    border: transparent;
+}
+
+@media screen and max-height 450px {
+    .sidenav,
+    .sidenavR{
+        padding-top:15px;
+    }
+    .sidenav a,
+    .sidenavR a{
+        font-size:18px;
+    }
+}
+
+.sidenavR img {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #111; /* Green background */
+   
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .addPicture{
+      margin: 0 20px 0 20px;
+      width: 20rem;
+  }
+
+  .card .text-white .bg-secondary:focus{
+    background-color: #f1f1f1;
+  }
+  .close:hover{
+    color:red;
+  }
+
+ .cstm-btn{
+    padding-left: 0px; 
+}
+
+.picTitle{
+    max-width: 180px;
+    float: left;
+    margin-right: 8px;
+}
+
+.collapseHeader{
+    padding: 0 !important;
+    border: none;
+}
+
+.sliderAddInput{
+    max-width: 25% !important;
+    float: right;
+}
+
+.custom-range{
+    max-width: 70% !important;
+    margin-right: 5px;
+    
+}
