@@ -3,8 +3,8 @@
 This project was started to provide an easy to use and free mockup tool for photographers.  
 You can use this tool to show photographs in different frames either at your own home or at a clients.  
 This includes the possibility of showing the exact dimensions of the picture in the chosen space.
-#### Demo: [jpmatz.de](https://www.jpmatz.de/demo)
-#### Desktop-App: [jpmatz.de](https://www.jpmatz.de)
+#### Demo: [patricematz.de](https://www.patricematz.de/photowall/demo/)
+#### Desktop-App: [patricematz.de](https://www.patricematz.de/photowall/blog.html)
 
 ![](./mock-it.png)
 
